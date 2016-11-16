@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dream Vacations</title>
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blueberry.css"/>
+    <style type="text/css">
+        *{
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #F0F0F0;
+            font: 14px/20px Arial, Sans-Serif;
+            color: #555;
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+            font-size: 180%;
+            line-height: 120%;
+            padding: 5% 0;
+        }
+        h2{
+            text-decoration: underline;
+            line-height: 280%;
+            padding-left: 2%;
+        }
+        h3{
+            line-height: 110%;
+            padding: 5% 0;
+        }
+        p{
+            padding: 1%;
+        }
+        img{
+            text-align: center;
+            max-width: 100%;
+            height: auto;
+            width: auto;
+        }
+        a{
+            color: #FFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            color: #FFF;
+            text-decoration: underline;
+        }
+        header{
+            background-color: #405580;
+            width: 100%;
+            height: 86px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            opacity: .90;
+        }
+        #logo{
+            margin: 20px;
+            float: left;
+            width: 200px;
+            height: 60px;
+            background: url("http://www.w3newbie.com/wp-content/uploads/the-gym.png") no-repeat center;
+        }
+        nav{
+            float: right;
+            padding: 35px 20px 20px 0;
+        }
+        #menu-icon{
+            display: none;
+            width: 40px;
+            height: 40px;
+            background: url("http://www.w3newbie.com/wp-content/uploads/icon.png") center;
+        }
+        a:hover#menu-icon{
+            border-radius: 4px 4px 0 0;
+        }
+        ul{
+            list-style: none;
+        }
+        nav ul li{
+            display: inline-block;
+            float: left;
+            padding: 10px;
+        }
+        .current{
+            color: #FFF;
+            text-decoration: underline;
+        }
+        #doc{
+            margin: 40px 0;
+        }
+        #content{
+            margin: 0 auto;
+            max-width: 1140px;
+            margin-top: 110px;
+        }
+        .blueberry{
+            max-width: 960px;
+            margin-top: 110px;
+        }
+        section{
+            width: 29%;
+            float: left;
+            margin: 2% 2%;
+            text-align: center;
+        }
+        .clear{
+            clear: both;
+        }
+        article{
+            float: left;
+            margin: 0 auto;
+            width: 50%;
+            height: auto;
+            padding: 4%;
+        }
+        aside{
+            float: right;
+            margin: 0 auto;
+            width: 35%;
+            height: auto;
+            padding: 3%;
+        }
+        ul.services li{
+            padding-left: 3%;
+        }
+        footer {
+            background: #333333;
+            width: 100%;
+            overflow: hidden;
+            opacity: .90;
+        }
+        footer p, footer h3{
+            color: #FFF;
+        }
+        footer p a{
+            color: #FFF;
+            text-decoration: none;
+        }
+        ul.social li{
+            display: inline;
+        }
+        ul.social li img{
+            height: 50px;
+        }
+        footer.second{
+            border-top: 1px solid #4D4E50;
+            background-color: #333333;
+            max-height: 50px;
+            text-align: center;
+            opacity: .95;
+        }
+/*----------------------------------MEDIA-----------------------------------------------------*/
+        @media screen and (max-width: 740px){
+            body{
+                position: absolute;
+            }
+        }
+
+        @media screen and (max-width: 740px){
+            header{
+                position: absolute;
+            }
+            #menu-icon{
+                display: inline-block;
+            }
+            nav ul, nav:active ul{
+                display: none;
+                position: absolute;
+                padding: 20px;
+                background: #405580;
+                border: 1px solid #FFF;
+                right: 20px;
+                top: 60px;
+                width: 50%;
+                border-radius: 2px 0 2px 2px;
+            }
+            nav li{
+                text-align: center;
+                width: 100%;
+                padding: 10px 0;
+                margin: 0;
+            }
+            nav:hover ul{
+                display: block;
+            }
+            section{
+                float: left;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            article{
+                float: left;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            aside{
+                float: left;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="jquery.blueberry.js"></script>
+    <script>
+        $(window).load(function() {
+            $('.blueberry').blueberry();
+        });
+    </script>
+</head>
+
+<style type="text/css">
+
+</style>
+<body>
+    <!--Begin Nav Bar-->
+    <header>
+        <a href="#" id="logo"></a>
+        <nav>
+            <a href="#" id="menu-icon"></a>
+            <ul>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="#">Vacation Properties</a></li>
+                <li><a href="#">Owner Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--End Nav Bar-->
+
+    <!--Begin SlideShow-->
+    <div id="doc">
+        <div id="content">
+            <div class ="blueberry">
+                <ul class="slides">
+                    <li><img src="http://container-news.com/wp-content/uploads/2016/08/expeditors.jpg"></li>
+                    <li><img src="http://container-news.com/wp-content/uploads/2016/08/expeditors.jpg"></li>
+                    <li><img src="http://container-news.com/wp-content/uploads/2016/08/expeditors.jpg"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--End SlideShow-->
+
+    <!--Begin One Third Sections-->
+    <section>
+        <img src="https://media.glassdoor.com/sqll/1381/expeditors-squarelogo-1418337849027.png"/>
+        <h1>Vacation Rentals</h1>
+        <p>20 Years of Experience Blurb.</p>
+    </section>
+
+    <section>
+        <img src="https://media.glassdoor.com/sqll/1381/expeditors-squarelogo-1418337849027.png"/>
+        <h1>Pay for Itself</h1>
+        <p>Have your Mortgage.</p>
+    </section>
+
+    <section>
+        <img src="https://media.glassdoor.com/sqll/1381/expeditors-squarelogo-1418337849027.png"/>
+        <h1>Hassle Free</h1>
+        <p>You don't need to worry about anything. I will handle all of the scheduling.</p>
+    </section>
+    <!--End One Third Sections-->
+
+    <div class="clear"></div>
+
+    <!--Begin Article and Aside-->
+        <article>
+            <img src="https://rdstar.com/wp-content/uploads/2015/02/expeditors.png" />
+        </article>
+        <aside>
+            <h2>exp.o Booking</h2>
+            <ul class="services">
+                <li><h3>International Air</h3></li>
+                <li><h3>Domestic</h3></li>
+                <li><h3>Ocean</h3></li>
+                <li><h3>SeaAir</h3></li>
+                <li><h3>IRF</h3></li>
+            </ul>
+        </aside>
+    <!--End Article and Aside-->
+
+    <div class="clear"></div>
+
+    <!--Begin Bottom Three Sections-->
+    <section>
+        <h1>Complete Bookings</h1>
+        <img src="https://media.glassdoor.com/sqll/1381/expeditors-squarelogo-1418337849027.png"/>
+        <p>20 Years of Experience Blurb.</p>
+    </section>
+
+    <section>
+        <h1>Ability to Update</h1>
+        <img src="https://media.glassdoor.com/sqll/1381/expeditors-squarelogo-1418337849027.png"/>
+        <p>Have your Mortgage.</p>
+    </section>
+
+    <section>
+        <h1>Electronic Documents</h1>
+        <img src="https://media.glassdoor.com/sqll/1381/expeditors-squarelogo-1418337849027.png"/>
+        <p>You don't need to worry about anything. I will handle all of the scheduling.</p>
+    </section>
+    <!--End Bottom Three Sections-->
+
+    <!--Begin Footer-->
+    <footer>
+        <section>
+            <h3><b>Expeditors International</b></h3>
+            <p><b>(206)679-5111</b><br><br>
+            14412 SE 266th St. <br>
+            Kent, WA 98042 <br></p>
+        </section>
+        <section>
+        <h3>Connect with exp.o Booking!</h3>
+            <ul class="social">
+                <li><a href="#"><img src="https://media.glassdoor.com/sqll/1381/expeditors-squarelogo-1418337849027.png"/></a> </li>
+                <li><a href="#"><img src="https://media.glassdoor.com/sqll/1381/expeditors-squarelogo-1418337849027.png"/></a> </li>
+                <li><a href="#"><img src="https://media.glassdoor.com/sqll/1381/expeditors-squarelogo-1418337849027.png"/></a> </li>
+                <li><a href="#"><img src="https://media.glassdoor.com/sqll/1381/expeditors-squarelogo-1418337849027.png"/></a> </li>
+            </ul>
+        </section>
+        <section>
+            <img src="https://media.glassdoor.com/sqll/1381/expeditors-squarelogo-1418337849027.png"/>
+        </section>
+    </footer>
+    <!--End Footer-->
+    <footer class="second">
+        <p>Dream Vacations</p>
+    </footer>
+</body>
+</html>

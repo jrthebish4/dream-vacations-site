@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dream Home Services</title>
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blueberry.css"/>
+    <style type="text/css">
+        *{
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #F0F0F0;
+            font: 14px/20px Arial, Sans-Serif;
+            color: #555;
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+            font-size: 250%;
+        }
+        h2{
+            text-decoration: underline;
+            line-height: 280%;
+            padding-left: 2%;
+        }
+        h3{
+            line-height: 110%;
+            padding: 5% 0;
+        }
+        p{
+            padding: 1%;
+        }
+        img{
+            text-align: center;
+            max-width: 100%;
+            height: auto;
+            width: auto;
+        }
+        a{
+            color: #FFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            color: #FFF;
+            text-decoration: underline;
+        }
+        header{
+            background-color: #405580;
+            width: 100%;
+            height: 86px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            opacity: .90;
+        }
+        #logo{
+            margin: 20px;
+            float: left;
+            width: 200px;
+            height: 60px;
+            background: url("img/dhs-new-logo.png") no-repeat center;
+        }
+        nav{
+            float: right;
+            padding: 35px 20px 20px 0;
+        }
+        #menu-icon{
+            display: none;
+            width: 40px;
+            height: 40px;
+            background: url("http://www.w3newbie.com/wp-content/uploads/icon.png") center;
+        }
+        a:hover#menu-icon{
+            border-radius: 4px 4px 0 0;
+        }
+        ul{
+            list-style: none;
+        }
+        nav ul li{
+            display: inline-block;
+            float: left;
+            padding: 10px;
+        }
+        .current{
+            color: #FFF;
+            text-decoration: underline;
+        }
+        #doc{
+            margin: 40px 0;
+        }
+        #content{
+            margin-top: 110px;
+        }
+        .blueberry{
+            max-width: 960px;
+            margin-top: 110px;
+        }
+        section{
+            width: 29%;
+            float: left;
+            margin: 2% 2%;
+            text-align: center;
+        }
+        .clear{
+            clear: both;
+        }
+        article{
+            float: left;
+            margin: 0 auto;
+            width: 50%;
+            height: auto;
+            padding: 4%;
+        }
+        aside{
+            float: right;
+            margin: 0 auto;
+            width: 35%;
+            height: inherit;
+            padding: 3%;
+        }
+        ul.services li{
+            padding-left: 3%;
+        }
+        footer {
+            background: #333333;
+            width: 100%;
+            overflow: hidden;
+            opacity: .90;
+        }
+        footer p, footer h3{
+            color: #FFF;
+        }
+        footer p a{
+            color: #FFF;
+            text-decoration: none;
+        }
+        ul.social li{
+            display: inline;
+        }
+        ul.social li img{
+            height: 50px;
+        }
+        footer.second{
+            border-top: 1px solid #4D4E50;
+            background-color: #333333;
+            max-height: 50px;
+            text-align: center;
+            opacity: .95;
+        }
+
+        .card {
+            /* Add shadows to create the "card" effect */
+            width: 29%;
+            float: left;
+            margin: 2% 2%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+
+        .card img {
+            border-radius: 5px 5px 0 0;
+        }
+
+        /* On mouse-over, add a deeper shadow */
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        /* Add some padding inside the card container */
+        .container {
+            padding: 2px 16px;
+        }
+
+        /*----------------------------------MEDIA-----------------------------------------------------*/
+        @media screen and (max-width: 740px){
+            body{
+                position: absolute;
+            }
+        }
+
+        @media screen and (max-width: 740px){
+            header{
+                position: absolute;
+            }
+            #menu-icon{
+                display: inline-block;
+            }
+            nav ul, nav:active ul{
+                display: none;
+                position: absolute;
+                padding: 20px;
+                background: #405580;
+                border: 1px solid #FFF;
+                right: 20px;
+                top: 60px;
+                width: 50%;
+                border-radius: 2px 0 2px 2px;
+            }
+            nav li{
+                text-align: center;
+                width: 100%;
+                padding: 10px 0;
+                margin: 0;
+            }
+            nav:hover ul{
+                display: block;
+            }
+            section{
+                float: left;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            article{
+                float: left;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            aside{
+                float: left;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .card{
+                float: left;
+                width: 100%;
+                margin: 0;
+                padding: 10px 0 0 0;
+                box-shadow: 0 0 0 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                border-radius: 2px;
+            }
+
+            .card img {
+                padding: 2px;
+                border-radius: 2px 2px 0 0;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<!--Begin Nav Bar-->
+<header>
+    <a href="#" id="logo"></a>
+    <nav>
+        <a href="#" id="menu-icon"></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html" class="current">Vacation Properties</a></li>
+            <li><a href="#">Owner Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<!--End Nav Bar-->
+
+<!--Begin Title-->
+<div id="content">
+    <h1>Our Properties</h1>
+</div>
+<!--End Title-->
+
+<!--Begin First Card-->
+<div class="card">
+    <img src="img/az-cart-life.png" alt="Avatar" style="width:100%">
+    <div class="container">
+        <h4><b>Vacation Property #1</b></h4>
+        <p>4bdrm & 3 bath - 2,350 sqft</p>
+        <p>Glendale, AZ - $250/night</p>
+        <p>This property makes AZ great again.</p>
+    </div>
+</div>
+<!--End First Card-->
+
+<!--Begin Second Card-->
+<div class="card">
+    <img src="img/az-cart-life.png" alt="Avatar" style="width:100%">
+    <div class="container">
+        <h4><b>Vacation Property #2</b></h4>
+        <p>4bdrm & 3 bath - 2,350 sqft</p>
+        <p>Glendale, AZ - $250/night</p>
+        <p>This property makes AZ great again.</p>
+    </div>
+</div>
+<!--End Second Card-->
+
+<!--Begin Third Card-->
+<div class="card">
+    <img src="img/az-cart-life.png" alt="Avatar" style="width:100%">
+    <div class="container">
+        <h4><b>Vacation Property #3</b></h4>
+        <p>4bdrm & 3 bath - 2,350 sqft</p>
+        <p>Glendale, AZ - $250/night</p>
+        <p>This property makes AZ great again.</p>
+    </div>
+</div>
+<!--End Third Card-->
+
+<!--Begin Fourth Card-->
+<div class="card">
+    <img src="img/az-cart-life.png" alt="Avatar" style="width:100%">
+    <div class="container">
+        <h4><b>Vacation Property #4</b></h4>
+        <p>4bdrm & 3 bath - 2,350 sqft</p>
+        <p>Glendale, AZ - $250/night</p>
+        <p>This property makes AZ great again.</p>
+    </div>
+</div>
+<!--End Fourth Card-->
+
+<!--Begin Fifth Card-->
+<div class="card">
+    <img src="img/az-cart-life.png" alt="Avatar" style="width:100%">
+    <div class="container">
+        <h4><b>Vacation Property #5</b></h4>
+        <p>4bdrm & 3 bath - 2,350 sqft</p>
+        <p>Glendale, AZ - $250/night</p>
+        <p>This property makes AZ great again.</p>
+    </div>
+</div>
+<!--End Fifth Card-->
+
+<!--Begin Sixth Card-->
+<div class="card">
+    <img src="img/az-cart-life.png" alt="Avatar" style="width:100%">
+    <div class="container">
+        <h4><b>Vacation Property #6</b></h4>
+        <p>4bdrm & 3 bath - 2,350 sqft</p>
+        <p>Glendale, AZ - $250/night</p>
+        <p>This property makes AZ great again.</p>
+</div>
+</div>
+<!--End Sixth Card-->
+
+
+<!--Begin Footer-->
+<footer>
+    <section>
+        <h3><b>Dream Home Services</b></h3>
+        <p><b>Rodney Bishop</b><br>
+            dreams@seanet.com<br>
+            (206)679-5111<br></p>
+    </section>
+    <section>
+        <h3>Contact Us</h3>
+        <ul class="social">
+            <li><a href="#"><img src="img/facebook.png"/></a> </li>
+            <li><a href="#"><img src="img/google-plus.png"/></a> </li>
+            <li><a href="#"><img src="img/linkedin.png"/></a> </li>
+            <li><a href="#"><img src="img/twitter.png"/></a> </li>
+        </ul>
+    </section>
+    <section>
+        <img src="img/DHSLogo.png"/>
+    </section>
+</footer>
+<!--End Footer-->
+<footer class="second">
+    <p>&copy;Dream Vacations</p>
+</footer>
+
+</body>
+</html>

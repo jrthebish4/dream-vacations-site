@@ -26,8 +26,8 @@
           <file leaf-file-name="rentals.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/rentals.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="303">
-                  <caret line="322" column="51" selection-start-line="322" selection-start-column="51" selection-end-line="322" selection-end-column="51" />
+                <state relative-caret-position="273">
+                  <caret line="324" column="10" selection-start-line="324" selection-start-column="10" selection-end-line="324" selection-end-column="10" />
                   <folding>
                     <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -36,7 +36,7 @@
                     <element signature="n#style#0;n#img#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="e#9623#9629#0" expanded="true" />
+                    <element signature="e#9625#9631#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -647,12 +647,12 @@
       <workItem from="1479245689944" duration="8805000" />
       <workItem from="1479311597124" duration="8281000" />
       <workItem from="1482857225904" duration="14569000" />
-      <workItem from="1483129502280" duration="4209000" />
+      <workItem from="1483129502280" duration="4592000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35864000" />
+    <option name="totallyTimeSpent" value="36247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="23" width="1237" height="777" extended-state="6" />
@@ -749,7 +749,7 @@
             <element signature="n#style#0;n#img#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9623#9629#0" expanded="true" />
+            <element signature="e#9625#9631#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -865,8 +865,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rentals.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="322" column="51" selection-start-line="322" selection-start-column="51" selection-end-line="322" selection-end-column="51" />
+        <state relative-caret-position="273">
+          <caret line="324" column="10" selection-start-line="324" selection-start-column="10" selection-end-line="324" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -875,7 +875,7 @@
             <element signature="n#style#0;n#img#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9623#9629#0" expanded="true" />
+            <element signature="e#9625#9631#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Dream Home Services</title>
-    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
@@ -12,57 +12,68 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="slides.css"/>
     <style type="text/css">
-        *{
+        * {
             margin: 0;
             border: 0;
             padding: 0;
         }
-        body{
+
+        body {
             background-color: #F0F0F0;
             font: 14px/20px Arial, Sans-Serif;
             color: #555;
             margin: 0;
         }
-        h1{
+
+        h1 {
             text-align: center;
             font-size: 250%;
         }
-        h2{
+
+        h2 {
             text-decoration: underline;
             line-height: 280%;
             padding-left: 2%;
         }
-        h3{
+
+        h3 {
             line-height: 110%;
             padding: 5% 0;
         }
-        p{
+
+        p {
             padding: 1%;
         }
-        img{
+
+        img {
             text-align: center;
             max-width: 100%;
             height: auto;
             width: auto;
         }
-        a{
+
+        a {
             color: #FFF;
             text-decoration: none;
             font-weight: bold;
         }
-        a:hover{
+
+        a:hover {
             color: #FFF;
             text-decoration: underline;
         }
-        .details{
+
+        .details {
             color: #5573aa;
             font-weight: normal;
             float: right;
         }
-        .details:hover{
+
+        .details:hover {
             color: #405580;
         }
-        header{
+
+        header {
             font-size: 120%;
             background-color: #5573aa;
             width: 100%;
@@ -73,7 +84,8 @@
             z-index: 100;
             opacity: .90;
         }
-        #logo{
+
+        #logo {
             margin: 20px;
             float: left;
             width: 200px;
@@ -81,97 +93,116 @@
             background: url("img/Dream-Home-Services-Logo_500x125.png") no-repeat center;
             background-size: 100%;
         }
-        nav{
+
+        nav {
             float: right;
             padding: 35px 20px 20px 0;
         }
-        #menu-icon{
+
+        #menu-icon {
             display: none;
             width: 40px;
             height: 40px;
             background: url("img/icon.png") center;
         }
-        a:hover#menu-icon{
+
+        a:hover#menu-icon {
             border-radius: 4px 4px 0 0;
         }
-        ul{
+
+        ul {
             list-style: none;
         }
-        nav ul li{
+
+        nav ul li {
             display: inline-block;
             float: left;
             padding: 10px;
         }
-        .current{
+
+        .current {
             color: #FFF;
             text-decoration: underline;
         }
-        #content{
+
+        #content {
             margin-top: 110px;
             width: 50%;
             margin-left: auto;
             margin-right: auto;
         }
-        section{
+
+        section {
             width: 29%;
             float: left;
             margin: 2% 2%;
             text-align: center;
         }
-        article{
+
+        article {
             float: left;
             margin: 0 auto;
             width: 50%;
             height: auto;
             padding: 4%;
         }
-        aside{
+
+        aside {
             float: right;
             margin: 0 auto;
             width: 35%;
             height: inherit;
             padding: 3%;
         }
-        ul.services li{
+
+        ul.services li {
             padding-left: 3%;
         }
+
         footer {
             background: #333333;
             width: 100%;
             overflow: hidden;
             opacity: .90;
         }
-        footer p, footer h3{
+
+        footer p, footer h3 {
             color: #FFF;
         }
-        footer p a{
+
+        footer p a {
             color: #FFF;
             text-decoration: none;
         }
-        ul.social li{
+
+        ul.social li {
             display: inline;
         }
-        ul.social li img{
+
+        ul.social li img {
             height: 50px;
         }
-        footer.second{
+
+        footer.second {
             border-top: 1px solid #4D4E50;
             background-color: #333333;
             max-height: 50px;
             text-align: center;
             opacity: .95;
         }
-        td{
+
+        td {
             width: 29%;
             float: left;
             margin: 2% 2%;
         }
+
         .card {
             /* Add shadows to create the "card" effect */
             width: 100%;
             float: left;
             margin: 0%;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             transition: 0.3s;
             border-radius: 5px;
         }
@@ -182,7 +213,7 @@
 
         /* On mouse-over, add a deeper shadow */
         .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         }
 
         /* Add some padding inside the card container */
@@ -191,20 +222,22 @@
         }
 
         /*----------------------------------MEDIA-----------------------------------------------------*/
-        @media screen and (max-width: 740px){
-            body{
+        @media screen and (max-width: 740px) {
+            body {
                 position: absolute;
             }
         }
 
-        @media screen and (max-width: 740px){
-            header{
+        @media screen and (max-width: 740px) {
+            header {
                 position: absolute;
             }
-            #menu-icon{
+
+            #menu-icon {
                 display: inline-block;
             }
-            nav ul, nav:active ul{
+
+            nav ul, nav:active ul {
                 display: none;
                 position: absolute;
                 padding: 20px;
@@ -215,47 +248,55 @@
                 width: 50%;
                 border-radius: 2px 0 2px 2px;
             }
-            nav li{
+
+            nav li {
                 text-align: center;
                 width: 100%;
                 padding: 10px 0;
                 margin: 0;
             }
-            nav:hover ul{
+
+            nav:hover ul {
                 display: block;
             }
-            section{
+
+            section {
                 float: left;
                 width: 100%;
                 margin: 0;
                 padding: 0;
             }
-            article{
+
+            article {
                 float: left;
                 width: 100%;
                 margin: 0;
                 padding: 0;
             }
-            aside{
+
+            aside {
                 float: left;
                 width: 100%;
                 margin: 0;
                 padding: 0;
             }
-            #content img{
+
+            #content img {
                 display: none;
             }
-            td{
+
+            td {
                 width: 100%;
                 float: left;
                 margin: 0;
             }
-            .card{
+
+            .card {
                 float: left;
                 width: 100%;
                 margin: 0;
                 padding: 10px 0 0 0;
-                box-shadow: 0 0 0 0 rgba(0,0,0,0.2);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
                 transition: 0.3s;
                 border-radius: 2px;
             }
@@ -291,190 +332,238 @@
     <tbody>
     <tr>
         <td>
-<!--Begin First Card-->
-<div class="card">
-    <a target="_blank" href="https://www.vrbo.com/385000">
-        <img src="img/az-pool-palm-basket.png" alt="Avatar" style="width:100%">
-    </a>
-    <div class="container">
-        <h4><b>Casa Starflower - Private Home</b></h4>
-        <p>3 bedrooms & 3.5 bathrooms - Chandler, AZ</p>
-        <p>Two golf courses, two club houses, and a golf cart!</p>
-        <p><a class="details" target="_blank" href="https://www.vrbo.com/385000">View Details...</a></p>
-    </div>
-</div>
-<!--End First Card-->
+            <!--Begin First Card-->
+            <div class="card">
+                <a target="_blank" href="https://www.vrbo.com/385000">
+                    <img src="img/az-pool-palm-basket.png" alt="Avatar" style="width:100%">
+                </a>
+                <div class="container">
+                    <h4><b>Casa Starflower - Private Home</b></h4>
+                    <p>3 bedrooms & 3.5 bathrooms - Chandler, AZ</p>
+                    <p>Two golf courses, two club houses, and a golf cart!</p>
+                    <p><a class="details" target="_blank" href="https://www.vrbo.com/385000">View Details...</a></p>
+                </div>
+            </div>
+            <!--End First Card-->
         </td>
         <td>
-<!--Begin Second Card-->
-<div class="card">
-    <a target="_blank" href="https://www.vrbo.com/667402">
-        <img src="img/az-pool-night.png" alt="Avatar" style="width:100%">
-    </a>
-    <div class="container">
-        <h4><b>Casa Avondale - Private Home</b></h4>
-        <p>4 bedrooms & 2 bathrooms - Avondale, AZ</p>
-        <p>Private pool, tiki bar, and putt putt golf!</p>
-        <p><a class="details" target="_blank" href="https://www.vrbo.com/667402">View Details...</a></p>
-    </div>
-</div>
-<!--End Second Card-->
+            <!--Begin Second Card-->
+            <div class="card">
+                <a target="_blank" href="https://www.vrbo.com/667402">
+                    <img src="img/az-pool-night.png" alt="Avatar" style="width:100%">
+                </a>
+                <div class="container">
+                    <h4><b>Casa Avondale - Private Home</b></h4>
+                    <p>4 bedrooms & 2 bathrooms - Avondale, AZ</p>
+                    <p>Private pool, tiki bar, and putt putt golf!</p>
+                    <p><a class="details" target="_blank" href="https://www.vrbo.com/667402">View Details...</a></p>
+                </div>
+            </div>
+            <!--End Second Card-->
         </td>
         <td>
-<!--Begin Third Card-->
-<div class="card">
-    <a target="_blank" href="https://www.vrbo.com/881492">
-        <img src="img/bobby-az.png" alt="Avatar" style="width:100%">
-    </a>
-    <div class="container">
-        <h4><b>Casa Desert Villa - Private Home</b></h4>
-        <p>4 bedrooms & 3 bathrooms - Scottsdale, AZ</p>
-        <p>Private pool, giant patio, and gas fire pit!</p>
-        <p><a class="details" target="_blank" href="https://www.vrbo.com/881492">View Details...</a></p>
-    </div>
-</div>
-<!--End Third Card-->
-        </td>
-    </tr>
-    <tr>
-        <td>
-<!--Begin Fourth Card-->
-<div class="card">
-    <a target="_blank" href="https://www.vrbo.com/729089">
-        <img src="img/pool-floatie.png" alt="Avatar" style="width:100%">
-    </a>
-    <div class="container">
-        <h4><b>Sierra Montana - Private Home</b></h4>
-        <p>5 bedrooms & 3.5 bathrooms - Surprise, AZ</p>
-        <p>Private pool, covered patio, and great for BBQ!</p>
-        <p><a class="details" target="_blank" href="https://www.vrbo.com/729089">View Details...</a></p>
-    </div>
-</div>
-<!--End Fourth Card-->
-        </td>
-        <td>
-<!--Begin Fifth Card-->
-<div class="card">
-    <a target="_blank" href="https://www.vrbo.com/913385">
-        <img src="img/prime-chandler.png" alt="Avatar" style="width:100%">
-    </a>
-    <div class="container">
-        <h4><b>Prime Time Chandler - Private Home</b></h4>
-        <p>4 bedrooms & 2.5 bathrooms - Chandler, AZ</p>
-        <p>Prime location with private outdoor living!</p>
-        <p><a class="details" target="_blank" href="https://www.vrbo.com/913385">View Details...</a></p>
-    </div>
-</div>
-<!--End Fifth Card-->
-        </td>
-        <td>
-<!--Begin Sixth Card-->
-<div class="card">
-    <a target="_blank" href="https://www.vrbo.com/873697">
-        <img src="img/old-town-az.png" alt="Avatar" style="width:100%">
-    </a>
-    <div class="container">
-        <h4><b>Old Town Scottsdale - Private Home</b></h4>
-        <p>3 bedrooms & 2.5 bathrooms - Scottsdale, AZ</p>
-        <p>Quaint location in the heart of Old Town Scottsdale</p>
-        <p><a class="details" target="_blank" href="https://www.vrbo.com/873697">View Details...</a></p>
-</div>
-</div>
-<!--End Sixth Card-->
+            <!--Begin Third Card-->
+            <div class="card">
+                <a target="_blank" href="https://www.vrbo.com/1021276">
+                    <img src="img/gilbert-pool.png" alt="Avatar" style="width:100%">
+                </a>
+                <div class="container">
+                    <h4><b>Gilbert Getaway - Private Home</b></h4>
+                    <p>3 bedrooms & 2 bathrooms - Gilbert, AZ</p>
+                    <p>Find paradise with this pool, patio, and BBQ!</p>
+                    <p><a class="details" target="_blank" href="https://www.vrbo.com/1021276">View Details...</a></p>
+                </div>
+            </div>
+            <!--End Third Card-->
         </td>
     </tr>
     <tr>
         <td>
-<!--Begin Seventh Card-->
-<div class="card">
-    <a target="_blank" href="https://www.vrbo.com/791346">
-        <img src="img/water-feature.png" alt="Avatar" style="width:100%">
-    </a>
-    <div class="container">
-        <h4><b>Drifter Drive - Private Home</b></h4>
-        <p>2 bedrooms & 2 bathrooms - Sun Lakes, AZ</p>
-        <p>Golf course, clubhouse, golf cart, and pool!</p>
-        <p><a class="details" target="_blank" href="https://www.vrbo.com/791346">View Details...</a></p>
-    </div>
-</div>
-<!--End Seventh Card-->
+            <!--Begin Fourth Card-->
+            <div class="card">
+                <a target="_blank" href="https://www.vrbo.com/881492">
+                    <img src="img/bobby-az.png" alt="Avatar" style="width:100%">
+                </a>
+                <div class="container">
+                    <h4><b>Casa Desert Villa - Private Home</b></h4>
+                    <p>4 bedrooms & 3 bathrooms - Scottsdale, AZ</p>
+                    <p>Private pool, giant patio, and gas fire pit!</p>
+                    <p><a class="details" target="_blank" href="https://www.vrbo.com/881492">View Details...</a></p>
+                </div>
+            </div>
+            <!--End Fourth Card-->
         </td>
         <td>
-<!--Begin Eighth Card-->
-<div class="card">
-    <a target="_blank" href="https://www.vrbo.com/668826">
-        <img src="img/hidden-valley.png" alt="Avatar" style="width:100%">
-    </a>
-    <div class="container">
-        <h4><b>Hidden Valley - Private Home</b></h4>
-        <p>4 bedrooms & 3 bathrooms - Maricopa, AZ</p>
-        <p>Great pool, mountain views, and privacy!</p>
-        <p><a class="details" target="_blank" href="https://www.vrbo.com/668826">View Details...</a></p>
-    </div>
-</div>
-<!--End Eighth Card-->
+            <!--Begin Fifth Card-->
+            <div class="card">
+                <a target="_blank" href="https://www.vrbo.com/913385">
+                    <img src="img/prime-chandler.png" alt="Avatar" style="width:100%">
+                </a>
+                <div class="container">
+                    <h4><b>Prime Time Chandler - Private Home</b></h4>
+                    <p>4 bedrooms & 2.5 bathrooms - Chandler, AZ</p>
+                    <p>Prime location with private outdoor living!</p>
+                    <p><a class="details" target="_blank" href="https://www.vrbo.com/913385">View Details...</a></p>
+                </div>
+            </div>
+            <!--End Fifth Card-->
         </td>
         <td>
-<!--Begin Ninth Card-->
-<div class="card">
-    <a target="_blank" href="https://www.vrbo.com/925904">
-        <img src="img/scotty-pool.png" alt="Avatar" style="width:100%">
-    </a>
-    <div class="container">
-        <h4><b>North Scottsdale - Private Home</b></h4>
-        <p>5 bedrooms & 3 bathrooms - Scottsdale, AZ</p>
-        <p>Private pool, hot tub, and well fenced yard!</p>
-        <p><a class="details" target="_blank" href="https://www.vrbo.com/925904">View Details...</a></p>
-    </div>
-</div>
-<!--End Ninth Card-->
+            <!--Begin Sixth Card-->
+            <div class="card">
+                <a target="_blank" href="https://www.vrbo.com/873697">
+                    <img src="img/old-town-az.png" alt="Avatar" style="width:100%">
+                </a>
+                <div class="container">
+                    <h4><b>Old Town Scottsdale - Private Home</b></h4>
+                    <p>3 bedrooms & 2.5 bathrooms - Scottsdale, AZ</p>
+                    <p>Quaint location in the heart of Old Town Scottsdale</p>
+                    <p><a class="details" target="_blank" href="https://www.vrbo.com/873697">View Details...</a></p>
+                </div>
+            </div>
+            <!--End Sixth Card-->
         </td>
     </tr>
     <tr>
         <td>
-<!--Begin Tenth Card-->
-<div class="card">
-    <a target="_blank" href="https://www.vrbo.com/761192">
-        <img src="img/keirland.png" alt="Avatar" style="width:100%">
-    </a>
-    <div class="container">
-        <h4><b>Perfect North Scottsdale Condo</b></h4>
-        <p>2 bedrooms & 2 bathrooms - Scottsdale, AZ</p>
-        <p>State of the art facilities, pools, and spas!</p>
-        <p><a class="details" target="_blank" href="https://www.vrbo.com/761192">View Details...</a></p>
-    </div>
-</div>
-<!--End Tenth Card-->
+            <!--Begin Seventh Card-->
+            <div class="card">
+                <a target="_blank" href="https://www.vrbo.com/729089">
+                    <img src="img/pool-floatie.png" alt="Avatar" style="width:100%">
+                </a>
+                <div class="container">
+                    <h4><b>Sierra Montana - Private Home</b></h4>
+                    <p>5 bedrooms & 3.5 bathrooms - Surprise, AZ</p>
+                    <p>Private pool, covered patio, and great for BBQ!</p>
+                    <p><a class="details" target="_blank" href="https://www.vrbo.com/729089">View Details...</a></p>
+                </div>
+            </div>
+            <!--End Seventh Card-->
         </td>
         <td>
-<!--Begin Eleventh Card-->
-<div class="card">
-    <a target="_blank" href="https://www.vrbo.com/917704">
-        <img src="img/heated-pool.png" alt="Avatar" style="width:100%">
-    </a>
-    <div class="container">
-        <h4><b>Sunny Chandler Townhouse</b></h4>
-        <p>2 bedrooms & 2 bathrooms - Chandler, AZ</p>
-        <p>Heated pool and hot tub in central location!</p>
-        <p><a class="details" target="_blank" href="https://www.vrbo.com/917704">View Details...</a></p>
-    </div>
-</div>
-<!--End Eleventh Card-->
+            <!--Begin Eighth Card-->
+            <div class="card">
+                <a target="_blank" href="https://www.vrbo.com/668826">
+                    <img src="img/hidden-valley.png" alt="Avatar" style="width:100%">
+                </a>
+                <div class="container">
+                    <h4><b>Hidden Valley - Private Home</b></h4>
+                    <p>4 bedrooms & 3 bathrooms - Maricopa, AZ</p>
+                    <p>Great pool, mountain views, and privacy!</p>
+                    <p><a class="details" target="_blank" href="https://www.vrbo.com/668826">View Details...</a></p>
+                </div>
+            </div>
+            <!--End Eighth Card-->
         </td>
         <td>
-<!--Begin Twelfth Card-->
-<div class="card">
-    <a target="_blank" href="https://www.vrbo.com/851675">
-        <img src="img/condo.png" alt="Avatar" style="width:100%">
-    </a>
-    <div class="container">
-        <h4><b>Immaculate North Scottsdale Condo</b></h4>
-        <p>3 bedrooms & 2 bathrooms - Scottsdale, AZ</p>
-        <p>State of the art facilities, pools, and spas!</p>
-        <p><a class="details" target="_blank" href="https://www.vrbo.com/851675">View Details...</a></p>
-    </div>
-</div>
-<!--End Twelfth Card-->
+            <!--Begin Ninth Card-->
+            <div class="card">
+                <a target="_blank" href="https://www.vrbo.com/791346">
+                    <img src="img/water-feature.png" alt="Avatar" style="width:100%">
+                </a>
+                <div class="container">
+                    <h4><b>Drifter Drive - Private Home</b></h4>
+                    <p>2 bedrooms & 2 bathrooms - Sun Lakes, AZ</p>
+                    <p>Golf course, clubhouse, golf cart, and pool!</p>
+                    <p><a class="details" target="_blank" href="https://www.vrbo.com/791346">View Details...</a></p>
+                </div>
+            </div>
+            <!--End Ninth Card-->
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <!--Begin Tenth Card-->
+            <div class="card">
+                <a target="_blank" href="https://www.vrbo.com/1025277">
+                    <img src="img/mesa-pool.png" alt="Avatar" style="width:100%">
+                </a>
+                <div class="container">
+                    <h4><b>West Mesa - Private Home</b></h4>
+                    <p>2 bedrooms & 2 bathrooms - Mesa, AZ</p>
+                    <p>Great pool and location near the Spring Training!</p>
+                    <p><a class="details" target="_blank" href="https://www.vrbo.com/1025277">View Details...</a></p>
+                </div>
+            </div>
+            <!--End Tenth Card-->
+        </td>
+        <td>
+            <!--Begin Eleventh Card-->
+            <div class="card">
+                <a target="_blank" href="https://www.vrbo.com/761192">
+                    <img src="img/keirland.png" alt="Avatar" style="width:100%">
+                </a>
+                <div class="container">
+                    <h4><b>Perfect North Scottsdale Condo</b></h4>
+                    <p>2 bedrooms & 2 bathrooms - Scottsdale, AZ</p>
+                    <p>State of the art facilities, pools, and spas!</p>
+                    <p><a class="details" target="_blank" href="https://www.vrbo.com/761192">View Details...</a></p>
+                </div>
+            </div>
+            <!--End Eleventh Card-->
+        </td>
+        <td>
+            <!--Begin Twelfth Card-->
+            <div class="card">
+                <a target="_blank" href="https://www.vrbo.com/925904">
+                    <img src="img/scotty-pool.png" alt="Avatar" style="width:100%">
+                </a>
+                <div class="container">
+                    <h4><b>North Scottsdale - Private Home</b></h4>
+                    <p>5 bedrooms & 3 bathrooms - Scottsdale, AZ</p>
+                    <p>Private pool, hot tub, and well fenced yard!</p>
+                    <p><a class="details" target="_blank" href="https://www.vrbo.com/925904">View Details...</a></p>
+                </div>
+            </div>
+            <!--End Twelfth Card-->
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <!--Begin 13 Card-->
+            <div class="card">
+                <a target="_blank" href="https://www.vrbo.com/851675">
+                    <img src="img/condo.png" alt="Avatar" style="width:100%">
+                </a>
+                <div class="container">
+                    <h4><b>Immaculate North Scottsdale Condo</b></h4>
+                    <p>3 bedrooms & 2 bathrooms - Scottsdale, AZ</p>
+                    <p>State of the art facilities, pools, and spas!</p>
+                    <p><a class="details" target="_blank" href="https://www.vrbo.com/851675">View Details...</a></p>
+                </div>
+            </div>
+            <!--End Tenth Card-->
+        </td>
+        <td>
+            <!--Begin 14 Card-->
+            <div class="card">
+                <a target="_blank" href="https://www.vrbo.com/917704">
+                    <img src="img/heated-pool.png" alt="Avatar" style="width:100%">
+                </a>
+                <div class="container">
+                    <h4><b>Sunny Chandler Townhouse</b></h4>
+                    <p>2 bedrooms & 2 bathrooms - Chandler, AZ</p>
+                    <p>Heated pool and hot tub in central location!</p>
+                    <p><a class="details" target="_blank" href="https://www.vrbo.com/917704">View Details...</a></p>
+                </div>
+            </div>
+            <!--End Eleventh Card-->
+        </td>
+        <td>
+            <!--Begin 15 Card-->
+
+            <div class="card">
+                <a target="_blank" href="https://www.vrbo.com/439654">
+                    <img src="img/cabo.png" alt="Avatar" style="width:100%">
+                </a>
+                <div class="container">
+                    <h4><b>Casa Villa Serena - Best Deal in Cabo</b></h4>
+                    <p>4 bedrooms & 3 bathrooms - Cabo, MX</p>
+                    <p>Private pool and beach with unlimited views!</p>
+                    <p><a class="details" target="_blank" href="https://www.vrbo.com/439654">View Details...</a></p>
+                </div>
+            </div>
+            <!--End Twelfth Card-->
         </td>
     </tr>
     </tbody>
@@ -491,10 +580,13 @@
     <section>
         <h3>Contact Us</h3>
         <ul class="social">
-            <li><a href="tel:+2066795111"><img src="img/phone-call.png"/></a> </li>
-            <li><a href="mailto:dreams@seanet.com?Subject=Dream%20Home%20Services" target="_top"><img src="img/open.png"/></a> </li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/rodney-bishop-89857a55"><img src="img/linkedin.png"/></a> </li>
-            <li><a target="_blank" href="https://www.thumbtack.com/-Chandler-AZ/service/2456666"><img src="img/thumbtack.png"></a> </li>
+            <li><a href="tel:+2066795111"><img src="img/phone-call.png"/></a></li>
+            <li><a href="mailto:dreams@seanet.com?Subject=Dream%20Home%20Services" target="_top"><img
+                    src="img/open.png"/></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/rodney-bishop-89857a55"><img
+                    src="img/linkedin.png"/></a></li>
+            <li><a target="_blank" href="https://www.thumbtack.com/-Chandler-AZ/service/2456666"><img
+                    src="img/thumbtack.png"></a></li>
         </ul>
     </section>
     <section>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Dream Home Services</title>
-    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
@@ -12,51 +12,60 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="slides.css"/>
     <style type="text/css">
-        *{
+        * {
             margin: 0;
             border: 0;
             padding: 0;
         }
-        body{
+
+        body {
             background-color: #F0F0F0;
             font: 14px/20px Arial, Sans-Serif;
             color: #555;
             margin: 0;
         }
-        h1{
+
+        h1 {
             text-align: center;
             font-size: 180%;
             line-height: 120%;
             padding: 5% 0;
         }
-        h2{
+
+        h2 {
             text-decoration: underline;
             line-height: 280%;
             padding-left: 2%;
         }
-        h3{
+
+        h3 {
             line-height: 110%;
             padding: 5% 0;
         }
-        p{
+
+        p {
             padding: 1%;
         }
-        img{
+
+        img {
             text-align: center;
             max-width: 100%;
             height: auto;
             width: auto;
         }
-        a{
+
+        a {
             color: #FFF;
             text-decoration: none;
             font-weight: bold;
         }
-        a:hover{
+
+        a:hover {
             color: #FFF;
             text-decoration: underline;
         }
-        header{
+
+        header {
             font-size: 120%;
             background-color: #5573aa;
             width: 100%;
@@ -67,7 +76,8 @@
             z-index: 100;
             opacity: .90;
         }
-        #logo{
+
+        #logo {
             margin: 20px;
             float: left;
             width: 200px;
@@ -75,114 +85,137 @@
             background: url("img/Dream-Home-Services-Logo_500x125.png") no-repeat center;
             background-size: 100%;
         }
-        nav{
+
+        nav {
             float: right;
             padding: 35px 20px 20px 0;
         }
-        #menu-icon{
+
+        #menu-icon {
             display: none;
             width: 40px;
             height: 40px;
             background: url("img/icon.png") center;
         }
-        a:hover#menu-icon{
+
+        a:hover#menu-icon {
             border-radius: 4px 4px 0 0;
         }
-        ul{
+
+        ul {
             list-style: none;
         }
-        nav ul li{
+
+        nav ul li {
             display: inline-block;
             float: left;
             padding: 10px;
         }
-        .current{
+
+        .current {
             color: #FFF;
             text-decoration: underline;
         }
-        #welcome{
+
+        #welcome {
             margin-top: 100px;
             margin-bottom: 10px;
             padding: 0%;
         }
-        #content{
+
+        #content {
             margin: 0 auto;
             max-width: 1140px;
         }
-        .sunny{
+
+        .sunny {
             max-width: 960px;
         }
-        section{
+
+        section {
             width: 29%;
             float: left;
             margin: 2% 2%;
             text-align: center;
         }
-        .clear{
+
+        .clear {
             clear: both;
         }
-        article{
+
+        article {
             float: left;
             margin: 0 auto;
             width: 50%;
             height: auto;
             padding: 4%;
         }
-        aside{
+
+        aside {
             float: right;
             margin: 0 auto;
             width: 35%;
             height: inherit;
             padding: 3%;
         }
-        ul.services li{
+
+        ul.services li {
             padding-left: 3%;
         }
+
         footer {
             background: #333333;
             width: 100%;
             overflow: hidden;
             opacity: .90;
         }
-        footer p, footer h3{
+
+        footer p, footer h3 {
             color: #FFF;
         }
-        footer p a{
+
+        footer p a {
             color: #FFF;
             text-decoration: none;
         }
-        ul.social li{
+
+        ul.social li {
             display: inline;
         }
-        ul.social li img{
+
+        ul.social li img {
             height: 50px;
         }
-        footer.second{
+
+        footer.second {
             border-top: 1px solid #4D4E50;
             background-color: #333333;
             max-height: 50px;
             text-align: center;
             opacity: .95;
         }
-        #flat{
+
+        #flat {
             text-decoration: none;
         }
 
-/*----------------------------------MEDIA-----------------------------------------------------*/
-        @media screen and (max-width: 740px){
-            body{
+        /*----------------------------------MEDIA-----------------------------------------------------*/
+        @media screen and (max-width: 740px) {
+            body {
                 position: absolute;
             }
         }
 
-        @media screen and (max-width: 740px){
-            header{
+        @media screen and (max-width: 740px) {
+            header {
                 position: absolute;
             }
-            #menu-icon{
+
+            #menu-icon {
                 display: inline-block;
             }
-            nav ul, nav:active ul{
+
+            nav ul, nav:active ul {
                 display: none;
                 position: absolute;
                 padding: 20px;
@@ -193,28 +226,33 @@
                 width: 50%;
                 border-radius: 2px 0 2px 2px;
             }
-            nav li{
+
+            nav li {
                 text-align: center;
                 width: 100%;
                 padding: 10px 0;
                 margin: 0;
             }
-            nav:hover ul{
+
+            nav:hover ul {
                 display: block;
             }
-            section{
+
+            section {
                 float: left;
                 width: 100%;
                 margin: 0;
                 padding: 0;
             }
-            article{
+
+            article {
                 float: left;
                 width: 100%;
                 margin: 0;
                 padding: 0;
             }
-            aside{
+
+            aside {
                 float: left;
                 width: 100%;
                 margin: 0;
@@ -226,7 +264,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script src="jquery.slides.js"></script>
     <script>
-        $(window).load(function() {
+        $(window).load(function () {
             $('.sunny').blueberry();
         });
     </script>
@@ -236,140 +274,148 @@
 
 </style>
 <body>
-    <!--Begin Nav Bar-->
-    <header>
-        <a href="#" id="logo"></a>
-        <nav>
-            <a href="#" id="menu-icon"></a>
-            <ul>
-                <li><a href="index.html" class="current">Home</a></li>
-                <li><a href="rentals.html">Vacation Properties</a></li>
+<!--Begin Nav Bar-->
+<header>
+    <a href="#" id="logo"></a>
+    <nav>
+        <a href="#" id="menu-icon"></a>
+        <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="rentals.html">Vacation Properties</a></li>
+        </ul>
+    </nav>
+</header>
+<!--End Nav Bar-->
+
+<div>
+    <h1 id="welcome">Vacation Property Management Experts</h1>
+</div>
+
+<!--Begin SlideShow-->
+<div id="doc">
+    <div id="content">
+        <div class="sunny">
+            <ul class="slides">
+                <li><img src="img/az-pool-night.png"></li>
+                <li><img src="img/keirland.png"></li>
+                <li><img src="img/pool-valley.png"></li>
+                <li><img src="img/az-front.png"></li>
+                <li><img src="img/az-pool-palm-basket.png"></li>
             </ul>
-        </nav>
-    </header>
-    <!--End Nav Bar-->
-
-    <div>
-        <h1 id="welcome">Vacation Property Management Experts</h1>
-    </div>
-
-    <!--Begin SlideShow-->
-    <div id="doc">
-        <div id="content">
-            <div class ="sunny">
-                <ul class="slides">
-                    <li><img src="img/az-pool-night.png"></li>
-                    <li><img src="img/keirland.png"></li>
-                    <li><img src="img/pool-valley.png"></li>
-                    <li><img src="img/az-front.png"></li>
-                    <li><img src="img/az-pool-palm-basket.png"></li>
-                </ul>
-            </div>
         </div>
     </div>
-    <!--End SlideShow-->
+</div>
+<!--End SlideShow-->
 
-    <!--Begin One Third Sections-->
+<!--Begin One Third Sections-->
+<section>
+    <img src="img/sunbed.png"/>
+    <h1>Management of Your Property</h1>
+    <p>We facilitate the management and maintenance of your vacation property.
+        We are always on-call to address all repair and service needs as they arise.
+        We manage all check-ins and checkouts, and coordinate all aspects of the guest experience.
+        We schedule all cleanings and turn the property around to ready it for the next arrivals.
+        We ensure the landscaping, pool, and the rest of your property are always taken care of.
+    </p>
+</section>
+
+<section>
+    <img src="img/luggage.png"/>
+    <h1>Complete Monthly Statements</h1>
+    <p>We will arrange and expedite the collection of all reservation income.
+        Money is then direct deposited from the guests into your private bank account.
+        You will receive monthly reports of rental income, activity, and billing statements for your vacation
+        property.</p>
+</section>
+
+<section>
+    <img src="img/palm-tree.png"/>
+    <h1>Execution of Vacation Rental Agreements</h1>
+    <p>We thoroughly vet and screen all guests. We require guests to provide identification documents,
+        and they are bound to our vacation rental agreement. We also handle all guest issues and time-consuming
+        paperwork.
+    </p>
+</section>
+<!--End One Third Sections-->
+
+<div class="clear"></div>
+
+<!--Begin Article and Aside-->
+<article>
+    <img src="img/lounge.png"/>
+</article>
+<aside>
+    <h2>Advantages of Dream Home Services</h2>
+    <ul class="services">
+        <li><h3>Professional Management – Ensure your property is always properly maintained and monitored on every
+            level</h3></li>
+        <li><h3>Flexibility - Keep your place rented as often or as seldom as you'd like</h3></li>
+        <li><h3>Billing - Receive direct deposit payments and monthly activity statements</h3></li>
+        <li><h3>Security – Thoroughly screen and vet all renters prior to booking</h3></li>
+        <li><h3>Scheduling - Scheduled cleanings, pool services, yard care, and other upkeep to constantly preserve and
+            protect your investment</h3></li>
+    </ul>
+</aside>
+<!--End Article and Aside-->
+
+<div class="clear"></div>
+
+<!--Begin Bottom Three Sections-->
+<section>
+    <h1>Online Bookings</h1>
+    <img src="img/booking.png"/>
+    <p>We leverage websites like VRBO, HomeAway, Airbnb, and other top sites to get your property exposed and booked.
+        We take care of all bookings inquiries for you.
+        We provide instant quotes to potential guests to quickly book them into your property before they find
+        another.</p>
+</section>
+
+<section>
+    <h1>Peace of Mind</h1>
+    <img src="img/cocktail.png"/>
+    <p>Let your vacation home pay for itself.
+        Our services easily pay for themselves through increased bookings,
+        and best of all, we will do all of the work as your vacation home pays for itself like never before.</p>
+</section>
+
+<section>
+    <h1>Electronic Documents</h1>
+    <img src="img/postcards.png"/>
+    <p>We handle all documents and payments on your behalf.
+        We streamline the entire process for you as the owner, as well as the guest,
+        making everyone’s experience more enjoyable.
+    </p>
+</section>
+<!--End Bottom Three Sections-->
+
+<!--Begin Footer-->
+<footer>
     <section>
-        <img src="img/sunbed.png"/>
-        <h1>Management of Your Property</h1>
-        <p>We facilitate the management and maintenance of your vacation property.
-            We are always on-call to address all repair and service needs as they arise.
-            We manage all check-ins and checkouts, and coordinate all aspects of the guest experience.
-            We schedule all cleanings and turn the property around to ready it for the next arrivals.
-            We ensure the landscaping, pool, and the rest of your property are always taken care of.
-        </p>
-    </section>
-
-    <section>
-        <img src="img/luggage.png"/>
-        <h1>Complete Monthly Statements</h1>
-        <p>We will arrange and expedite the collection of all reservation income.
-            Money is then direct deposited from the guests into your private bank account.
-            You will receive monthly reports of rental income, activity, and billing statements for your vacation property.</p>
-    </section>
-
-    <section>
-        <img src="img/palm-tree.png"/>
-        <h1>Execution of Vacation Rental Agreements</h1>
-        <p>We thoroughly vet and screen all guests. We require guests to provide identification documents,
-            and they are bound to our vacation rental agreement. We also handle all guest issues and time-consuming paperwork.
-        </p>
-    </section>
-    <!--End One Third Sections-->
-
-    <div class="clear"></div>
-
-    <!--Begin Article and Aside-->
-        <article>
-            <img src="img/lounge.png" />
-        </article>
-        <aside>
-            <h2>Advantages of Dream Home Services</h2>
-            <ul class="services">
-                <li><h3>Professional Management – Ensure your property is always properly maintained and monitored on every level</h3></li>
-                <li><h3>Flexibility - Keep your place rented as often or as seldom as you'd like</h3></li>
-                <li><h3>Billing - Receive direct deposit payments and monthly activity statements</h3></li>
-                <li><h3>Security – Thoroughly screen and vet all renters prior to booking</h3></li>
-                <li><h3>Scheduling - Scheduled cleanings, pool services, yard care, and other upkeep to constantly preserve and protect your investment</h3></li>
-            </ul>
-        </aside>
-    <!--End Article and Aside-->
-
-    <div class="clear"></div>
-
-    <!--Begin Bottom Three Sections-->
-    <section>
-        <h1>Online Bookings</h1>
-        <img src="img/booking.png"/>
-        <p>We leverage websites like VRBO, HomeAway, Airbnb, and other top sites to get your property exposed and booked.
-            We take care of all bookings inquiries for you.
-            We provide instant quotes to potential guests to quickly book them into your property before they find another.</p>
-    </section>
-
-    <section>
-        <h1>Peace of Mind</h1>
-        <img src="img/cocktail.png"/>
-        <p>Let your vacation home pay for itself.
-            Our services easily pay for themselves through increased bookings,
-            and best of all, we will do all of the work as your vacation home pays for itself like never before.</p>
-    </section>
-
-    <section>
-        <h1>Electronic Documents</h1>
-        <img src="img/postcards.png"/>
-        <p>We handle all documents and payments on your behalf.
-            We streamline the entire process for you as the owner, as well as the guest,
-            making everyone’s experience more enjoyable.
-        </p>
-    </section>
-    <!--End Bottom Three Sections-->
-
-    <!--Begin Footer-->
-    <footer>
-        <section>
-            <h3><b>Dream Home Services</b></h3>
-            <p><b>Rodney Bishop</b><br>
+        <h3><b>Dream Home Services</b></h3>
+        <p><b>Rodney Bishop</b><br>
             <a href="mailto:dreams@seanet.com?Subject=Dream%20Home%20Services" target="_top">dreams@seanet.com</a><br>
             <a href="tel:+2066795111">(206)679-5111</a><br></p>
-        </section>
-        <section>
+    </section>
+    <section>
         <h3>Contact Us</h3>
-            <ul class="social">
-                <li><a href="tel:+2066795111"><img src="img/phone-call.png"/></a> </li>
-                <li><a href="mailto:dreams@seanet.com?Subject=Dream%20Home%20Services" target="_top"><img src="img/open.png"/></a> </li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/rodney-bishop-89857a55"><img src="img/linkedin.png"/></a> </li>
-                <li><a target="_blank" href="https://www.thumbtack.com/-Chandler-AZ/service/2456666"><img src="img/thumbtack.png"></a> </li>
-            </ul>
-        </section>
-        <section>
-            <img src="img/Dream-Home-Services-Logo_500x125.png"/>
-        </section>
-    </footer>
-    <!--End Footer-->
-    <footer class="second">
-        <p>&copy;Dream Home Services. 2017.</p>
-        <div>Icons by <a id="flat" href="www.flaticon.com" title="FlatIcon">FlatIcon</a>.</div>
-    </footer>
+        <ul class="social">
+            <li><a href="tel:+2066795111"><img src="img/phone-call.png"/></a></li>
+            <li><a href="mailto:dreams@seanet.com?Subject=Dream%20Home%20Services" target="_top"><img
+                    src="img/open.png"/></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/rodney-bishop-89857a55"><img
+                    src="img/linkedin.png"/></a></li>
+            <li><a target="_blank" href="https://www.thumbtack.com/-Chandler-AZ/service/2456666"><img
+                    src="img/thumbtack.png"></a></li>
+        </ul>
+    </section>
+    <section>
+        <img src="img/Dream-Home-Services-Logo_500x125.png"/>
+    </section>
+</footer>
+<!--End Footer-->
+<footer class="second">
+    <p>&copy;Dream Home Services. 2017.</p>
+    <div>Icons by <a id="flat" href="www.flaticon.com" title="FlatIcon">FlatIcon</a>.</div>
+</footer>
 </body>
 </html>
